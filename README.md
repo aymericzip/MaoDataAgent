@@ -98,6 +98,12 @@ docker compose up -d
 
 This starts PostgreSQL 16, the FastAPI backend, and the React frontend behind Nginx.
 
+For a clean rebuild (stop and remove all containers, remove old images, rebuild and restart):
+
+```bash
+bash scripts/build.sh
+```
+
 ### Local Development
 
 **Backend:**

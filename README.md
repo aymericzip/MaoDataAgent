@@ -89,7 +89,7 @@ cp backend/.env.example backend/.env
 # Edit backend/.env with your LLM_API_KEY and other settings
 
 # 2. Start services
-docker compose up -d
+bash scripts/build.sh
 
 # 3. Access the application
 # Frontend: http://localhost:9280

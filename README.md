@@ -2,6 +2,8 @@
 
 **DataAgent** is an open-source, web-based intelligent assistant for data exploration. It enables users to interact with their business data through natural language conversations powered by LLMs. With built-in tools for SQL execution, schema exploration, and file browsing, DataAgent bridges the gap between domain users and their databases.
 
+![query sample](https://github.com/Fnck/MaoDataAgent/blob/main/docs/screen_sample.gif)
+
 ## Features
 
 - **Natural language data exploration** -- Ask questions about your data and get answers with real-time SQL execution

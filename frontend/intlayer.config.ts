@@ -24,7 +24,7 @@ const config: IntlayerConfig = {
      * - "search-params": Use search params to define the locale (e.g., /dashboard/?locale=en, /dashboard/?locale=fr)
      * Default: "prefix-no-default"
      */
-    mode: "prefix-no-default",
+    mode: "no-prefix",
 
     /**
      * Enables the Intlayer locale-routing proxy (middleware).
@@ -120,7 +120,7 @@ const config: IntlayerConfig = {
      * - "dynamic": Dynamically imported using Suspense.
      * - "fetch": Fetched dynamically via the live sync API.
      */
-    importMode: "static",
+    importMode: "dynamic",
 
     format: "i18next",
   },

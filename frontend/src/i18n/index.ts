@@ -1,26 +1,6 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import en from "./en.json";
-import zh from "./zh.json";
+import i18n from "@intlayer/i18next";
+import { initReactI18next } from "@intlayer/react-i18next";
 
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources: {
-      en: { translation: en },
-      zh: { translation: zh },
-    },
-    fallbackLng: "en",
-    interpolation: {
-      escapeValue: false,
-    },
-    detection: {
-      order: ["localStorage", "navigator"],
-      lookupLocalStorage: "dataagent_lang",
-      caches: ["localStorage"],
-    },
-  });
+i18n.use(initReactI18next);
 
 export default i18n;
